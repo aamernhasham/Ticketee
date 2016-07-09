@@ -1,5 +1,14 @@
+<div class="page-header">
+<h1>Showing Project Details</h1>
+<ul class="actions">
+
+<li><%=link_to "Edit Project", edit_project_path(@project), class: "new"%></li>
+<li><%=link_to "Show all Projects",projects_path%></li>
+<li><%=link_to "Delete Project", project_path(@project), method: :delete, class: "delete"%></li>
+</ul>
+</div>
+
 Name and description of projects as follows:<br/>
 
 Name:<%=@project.name%><br/>
 Description: <%=@project.description%><br/>
-
